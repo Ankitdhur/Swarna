@@ -1,0 +1,218 @@
+{
+    "extracted_instances": [
+        {
+            "id": "CourtCase_ST_No_85_2004",
+            "classes": [
+                "CourtCase"
+            ],
+            "properties": {
+                "hasCaseNumber": "85 of 2004",
+                "hasStatus": "closed",
+                "hasJudgementDetails": "Appellants convicted under Section 304-B (2), 498A IPC and 4 D.P. Act.  Ten years R.I. for 304-B, two years R.I. with Rs. 5000/- fine for 498A, and one year R.I. with fine of 2500/= for the last charge.",
+                "filedOn": "2.4.2004",
+                "followsLaw": [
+                    "IPCsection498A",
+                    "IPCsection_304B"
+                ]
+            }
+        },
+        {
+            "id": "Accused_DhanSingh",
+            "classes": [
+                "Accused",
+                "Groom'sFamilyMember"
+            ],
+            "properties": {
+                "hasName": "Dhan Singh",
+                "isAccusedOf": [
+                    "CourtCase_ST_No_85_2004"
+                ],
+                "hasRelationShipToVictim": "father-in-law"
+            }
+        },
+        {
+            "id": "Accused_Makkhan",
+            "classes": [
+                "Accused",
+                "Groom'sFamilyMember"
+            ],
+            "properties": {
+                "hasName": "Makkhan",
+                "isAccusedOf": [
+                    "CourtCase_ST_No_85_2004"
+                ],
+                "hasRelationShipToVictim": "mother-in-law"
+            }
+        },
+        {
+            "id": "Accused_AkhileshKumar",
+            "classes": [
+                "Accused",
+                "Groom"
+            ],
+            "properties": {
+                "hasName": "Akhilesh Kumar",
+                "isAccusedOf": [
+                    "CourtCase_ST_No_85_2004"
+                ],
+                "hasRelationShipToVictim": "husband"
+            }
+        },
+        {
+            "id": "Victim_Geeta",
+            "classes": [
+                "Victim",
+                "Bride"
+            ],
+            "properties": {
+                "hasName": "Geeta",
+                "hasAge": "22",
+                "isAssociatedWith": [
+                    "CourtCase_ST_No_85_2004"
+                ],
+                "isRelatedTo": [
+                    "Accused_DhanSingh",
+                    "Accused_Makkhan",
+                    "Accused_AkhileshKumar"
+                ]
+            }
+        },
+        {
+            "id": "Event_Marriage_GeetaAkhilesh",
+            "classes": [
+                "MarriageCeremony",
+                "Event"
+            ],
+            "properties": {
+                "OccuredOn": "6.12.2001",
+                "involves": [
+                    "Victim_Geeta",
+                    "Accused_AkhileshKumar"
+                ],
+                "hasDetail": "Hindu marriage ceremonies",
+                "hasLocation": "Not specified"
+            }
+        },
+        {
+            "id": "Event_Death_Geeta",
+            "classes": [
+                "Death",
+                "Bride'sDeath"
+            ],
+            "properties": {
+                "OccuredOn": "23.11.2003",
+                "involves": [
+                    "Victim_Geeta"
+                ],
+                "hasDetail": "Death due to asphyxia from strangulation.",
+                "hasLocation": "Accused'sResidence"
+            }
+        },
+        {
+            "id": "Law_IPC_498A",
+            "classes": [
+                "Law"
+            ],
+            "properties": {
+                "hasCaseNumber": "498A",
+                "hasPunishment": "two years R.I. with Rs. 5000/- fine"
+            }
+        },
+        {
+            "id": "Law_IPC_304B",
+            "classes": [
+                "Law"
+            ],
+            "properties": {
+                "hasCaseNumber": "304-B",
+                "hasPunishment": "ten years R.I."
+            }
+        },
+        {
+            "id": "Evidence_PostMortemReport",
+            "classes": [
+                "post-mortem-report",
+                "Evidence"
+            ],
+            "properties": {
+                "hasDescription": "Autopsy report indicating cause of death as asphyxia due to anti-mortem strangulation.  Ligature mark and fractured hyoid bone noted.",
+                "hasSubmissionDate": "24.11.2003",
+                "isPartOfCase": [
+                    "CourtCase_ST_No_85_2004"
+                ],
+                "isEvidenceFor": [
+                    "Law_IPC_304B"
+                ],
+                "hasLocation": "District Hospital Jhansi",
+                "wasCreatedBy": [
+                    "Dr._V.V._Arya"
+                ]
+            }
+        },
+        {
+            "id": "Evidence_FIR",
+            "classes": [
+                "FIR",
+                "Evidence"
+            ],
+            "properties": {
+                "hasDescription": "FIR filed by Gunchi Lal alleging dowry demands and torture leading to Geeta's death.",
+                "wasRegisteredOn": "23.11.2003",
+                "hasFilingOfficer": "P. K. Chaturvedi",
+                "isPartOfCase": [
+                    "CourtCase_ST_No_85_2004"
+                ],
+                "isFiledIn": [
+                    "PoliceStation_BaruwaSagar"
+                ],
+                "hasCaseNumber": "505 of 2003"
+            }
+        },
+        {
+            "id": "Location_PoliceStation_BaruwaSagar",
+            "classes": [
+                "PoliceStation",
+                "Location"
+            ],
+            "properties": {
+                "hasName": "Baruwa Sagar",
+                "hasAddress": "District Jhansi"
+            }
+        },
+        {
+            "id": "Person_GunchiLal",
+            "classes": [
+                "Person"
+            ],
+            "properties": {
+                "hasName": "Gunchi Lal",
+                "hasRelationShipToVictim": "father",
+                "hasRoleInCase": "informant"
+            }
+        },
+        {
+            "id": "Person_Dr_V_V_Arya",
+            "classes": [
+                "Person"
+            ],
+            "properties": {
+                "hasName": "V.V. Arya",
+                "hasRoleInCase": "doctor"
+            }
+        },
+        {
+            "id": "DowryItems_Motorcycle",
+            "classes": [
+                "DowryItems",
+                "Object"
+            ],
+            "properties": {
+                "hasDescription": "Motorcycle",
+                "hasMonetaryValue": "40000.00",
+                "wasExchangedIn": [
+                    "Event_Marriage_GeetaAkhilesh"
+                ]
+            }
+        }
+    ]
+}
